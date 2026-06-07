@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estifanos's Hair Studio | Ottawa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="salon.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Estifanos's</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#stylists">Stylists</a></li>
+      <li><a href="#booking">Book</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#booking" class="nav-book">Reserve Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Ottawa's Premier Hair Studio</p>
+    <h1>Where Hair Becomes<br><em>Art</em></h1>
+    <p class="hero-desc">Estifanos's Hair Studio offers precision cuts, colour artistry, and transformative treatments in the heart of Ottawa. Book your experience today.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary-salon">Book Appointment</a>
+      <a href="#services" class="btn-outline-salon">Our Services</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <span>12+</span>
+    <span>Years of<br>Excellence</span>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <p class="section-eyebrow fade-in">What We Offer</p>
+    <h2 class="section-title fade-in">Our Services</h2>
+    <div class="section-divider fade-in"></div>
+    <div class="services-grid">
+      <div class="service-card fade-in" onclick="selectService(this,'Precision Cut',85,60)">
+        <div class="service-icon">&#9986;&#65039;</div>
+        <div class="service-name">Precision Cut</div>
+        <div class="service-desc">A tailored cut designed around your face shape, lifestyle, and vision.</div>
+        <div class="service-price">From $85</div>
+        <div class="service-duration">60 min</div>
+      </div>
+      <div class="service-card fade-in" onclick="selectService(this,'Colour &amp; Highlights',150,120)">
+        <div class="service-icon">&#127912;</div>
+        <div class="service-name">Colour &amp; Highlights</div>
+        <div class="service-desc">Full colour, balayage, ombre, or highlights crafted to perfection.</div>
+        <div class="service-price">From $150</div>
+        <div class="service-duration">120 min</div>
+      </div>
+      <div class="service-card fade-in" onclick="selectService(this,'Blowout &amp; Style',55,45)">
+        <div class="service-icon">&#128168;</div>
+        <div class="service-name">Blowout &amp; Style</div>
+        <div class="service-desc">Volume, smoothness, or waves — we finish every look flawlessly.</div>
+        <div class="service-price">From $55</div>
+        <div class="service-duration">45 min</div>
+      </div>
+      <div class="service-card fade-in" onclick="selectService(this,'Deep Treatment',70,45)">
+        <div class="service-icon">&#10024;</div>
+        <div class="service-name">Deep Treatment</div>
+        <div class="service-desc">Nourishing masks and keratin treatments for healthy, radiant hair.</div>
+        <div class="service-price">From $70</div>
+        <div class="service-duration">45 min</div>
+      </div>
+      <div class="service-card fade-in" onclick="selectService(this,'Bridal Package',320,180)">
+        <div class="service-icon">&#128141;</div>
+        <div class="service-name">Bridal Package</div>
+        <div class="service-desc">Trial run, wedding day styling, and touch-up kit included.</div>
+        <div class="service-price">From $320</div>
+        <div class="service-duration">180 min</div>
+      </div>
+      <div class="service-card fade-in" onclick="selectService(this,'Kids Cut',35,30)">
+        <div class="service-icon">&#129399;</div>
+        <div class="service-name">Kids Cut</div>
+        <div class="service-desc">Gentle, fun, and patient styling for children under 12.</div>
+        <div class="service-price">From $35</div>
+        <div class="service-duration">30 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stylists">
+  <div class="section-inner">
+    <p class="section-eyebrow fade-in">Meet the Team</p>
+    <h2 class="section-title fade-in">Our Stylists</h2>
+    <div class="section-divider fade-in"></div>
+    <div class="stylists-grid">
+      <div class="stylist-card fade-in" onclick="selectStylist(this,'Sophie Laurent')">
+        <div class="stylist-avatar">&#128105;</div>
+        <div class="stylist-name">Sophie Laurent</div>
+        <div class="stylist-specialty">Colour Specialist</div>
+        <div class="stylist-bio">8 years of expertise in balayage and creative colour. Trained in Paris and Montreal.</div>
+      </div>
+      <div class="stylist-card fade-in" onclick="selectStylist(this,'Marcus Chen')">
+        <div class="stylist-avatar">&#128104;</div>
+        <div class="stylist-name">Marcus Chen</div>
+        <div class="stylist-specialty">Precision Cut Expert</div>
+        <div class="stylist-bio">Specializes in geometric cuts and textured styles. Featured in Ottawa Style Magazine.</div>
+      </div>
+      <div class="stylist-card fade-in" onclick="selectStylist(this,'Aicha Diallo')">
+        <div class="stylist-avatar">&#128105;&#127998;</div>
+        <div class="stylist-name">Aicha Diallo</div>
+        <div class="stylist-specialty">Texture &amp; Curl Expert</div>
+        <div class="stylist-bio">10 years experience with natural textures, curls, and protective styles.</div>
+      </div>
+      <div class="stylist-card fade-in" onclick="selectStylist(this,'Jordan Park')">
+        <div class="stylist-avatar">&#129489;</div>
+        <div class="stylist-name">Jordan Park</div>
+        <div class="stylist-specialty">Bridal Stylist</div>
+        <div class="stylist-bio">Bridal and event specialist. Over 200 weddings styled across Ottawa and Toronto.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="section-inner">
+    <p class="section-eyebrow fade-in">Reserve Your Visit</p>
+    <h2 class="section-title fade-in">Book an Appointment</h2>
+    <div class="section-divider fade-in"></div>
+    <div class="booking-wrapper">
+      <div class="booking-form-section">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="clientName" placeholder="Full name" oninput="updateSummary()"/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="clientEmail" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="clientPhone" placeholder="+1 (613) 000-0000"/>
+        </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select id="serviceSelect" onchange="updateFromSelect()">
+            <option value="">Select a service</option>
+            <option value="Precision Cut|85|60">Precision Cut — From $85</option>
+            <option value="Colour and Highlights|150|120">Colour and Highlights — From $150</option>
+            <option value="Blowout and Style|55|45">Blowout and Style — From $55</option>
+            <option value="Deep Treatment|70|45">Deep Treatment — From $70</option>
+            <option value="Bridal Package|320|180">Bridal Package — From $320</option>
+            <option value="Kids Cut|35|30">Kids Cut — From $35</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Stylist</label>
+          <select id="stylistSelect" onchange="updateFromStylistSelect()">
+            <option value="">Any available stylist</option>
+            <option value="Sophie Laurent">Sophie Laurent</option>
+            <option value="Marcus Chen">Marcus Chen</option>
+            <option value="Aicha Diallo">Aicha Diallo</option>
+            <option value="Jordan Park">Jordan Park</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Select Date</label>
+          <div class="calendar-grid">
+            <div class="calendar-header">
+              <button class="calendar-nav" onclick="prevMonth()">&#8249;</button>
+              <span id="calMonthYear"></span>
+              <button class="calendar-nav" onclick="nextMonth()">&#8250;</button>
+            </div>
+            <div class="cal-days-header">
+              <div class="cal-day-label">Su</div>
+              <div class="cal-day-label">Mo</div>
+              <div class="cal-day-label">Tu</div>
+              <div class="cal-day-label">We</div>
+              <div class="cal-day-label">Th</div>
+              <div class="cal-day-label">Fr</div>
+              <div class="cal-day-label">Sa</div>
+            </div>
+            <div class="cal-days" id="calDays"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Select Time</label>
+          <div class="time-slots" id="timeSlots"></div>
+        </div>
+        <div class="form-group">
+          <label>Special Requests</label>
+          <input type="text" id="specialRequests" placeholder="Allergies, preferences, etc."/>
+        </div>
+        <button class="btn-primary-salon" style="width:100%;padding:1rem;" onclick="confirmBooking()">Confirm Booking</button>
+      </div>
+
+      <div class="booking-summary">
+        <div class="summary-title">Your Appointment</div>
+        <div class="summary-row">
+          <span class="summary-label">Client</span>
+          <span class="summary-value" id="sum-name"><span class="summary-placeholder">Not entered</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Service</span>
+          <span class="summary-value" id="sum-service"><span class="summary-placeholder">None selected</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Stylist</span>
+          <span class="summary-value" id="sum-stylist"><span class="summary-placeholder">Any available</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Date</span>
+          <span class="summary-value" id="sum-date"><span class="summary-placeholder">Not selected</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Time</span>
+          <span class="summary-value" id="sum-time"><span class="summary-placeholder">Not selected</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Duration</span>
+          <span class="summary-value" id="sum-duration"><span class="summary-placeholder">--</span></span>
+        </div>
+        <div class="summary-total" id="sum-price">--</div>
+        <p class="summary-note">Free cancellation up to 24 hours before your appointment. A confirmation email will be sent upon booking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow" style="color:var(--gold);">Find Us</p>
+    <h2 class="section-title">Visit the Studio</h2>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h4>Address</h4>
+        <p>247 Elgin Street<br>Ottawa, ON K2P 1L9<br>Canada</p>
+      </div>
+      <div class="contact-block">
+        <h4>Hours</h4>
+        <p>Mon to Fri: 9am to 8pm<br>Saturday: 9am to 6pm<br>Sunday: 10am to 4pm</p>
+      </div>
+      <div class="contact-block">
+        <h4>Contact</h4>
+        <p>Phone: (613) 555-0192<br>Email: hello@estifanoshair.ca<br>Instagram: @estifanoshair</p>
+      </div>
+      <div class="contact-block">
+        <h4>Parking</h4>
+        <p>Street parking available<br>OC Transpo: Routes 1, 7, 14<br>Wheelchair accessible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>2026 Estifanos's Hair Studio, Ottawa &nbsp;&middot;&nbsp; Designed by <a href="https://estifanoswm.vercel.app/" target="_blank">Estifanos Wondem Meshesha</a> &nbsp;&middot;&nbsp; SEG3125 Assignment 2</p>
+</footer>
+
+<div id="success-screen">
+  <div class="success-icon">&#10024;</div>
+  <div class="success-title">Appointment Confirmed</div>
+  <div class="success-ref" id="success-ref">REF: EST-000000</div>
+  <div class="success-desc" id="success-desc">A confirmation has been sent to your email. We look forward to welcoming you at Estifanos's Hair Studio.</div>
+  <button class="btn-primary-salon" onclick="closeSuccess()">Back to Home</button>
+</div>
+
+<div class="notification" id="notification"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var state = { service:'', price:0, duration:0, stylist:'', date:'', time:'', month: new Date().getMonth(), year: new Date().getFullYear() };
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var TIMES = ['9:00 AM','9:30 AM','10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','12:30 PM','1:00 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM','4:30 PM','5:00 PM','5:30 PM','6:00 PM','6:30 PM','7:00 PM'];
+  var BOOKED = ['10:00 AM','12:00 PM','3:00 PM','5:00 PM'];
+
+  function selectService(el, name, price, duration) {
+    document.querySelectorAll('.service-card').forEach(function(c){ c.classList.remove('selected'); });
+    el.classList.add('selected');
+    state.service = name; state.price = price; state.duration = duration;
+    updateSummary();
+    showNotification('Service selected: ' + name);
+  }
+
+  function selectStylist(el, name) {
+    document.querySelectorAll('.stylist-card').forEach(function(c){ c.classList.remove('selected'); });
+    el.classList.add('selected');
+    state.stylist = name;
+    document.getElementById('stylistSelect').value = name;
+    updateSummary();
+    showNotification('Stylist selected: ' + name);
+  }
+
+  function updateFromSelect() {
+    var val = document.getElementById('serviceSelect').value;
+    if (!val) return;
+    var parts = val.split('|');
+    state.service = parts[0]; state.price = parseInt(parts[1]); state.duration = parseInt(parts[2]);
+    document.querySelectorAll('.service-card').forEach(function(c){ c.classList.remove('selected'); });
+    updateSummary();
+  }
+
+  function updateFromStylistSelect() {
+    state.stylist = document.getElementById('stylistSelect').value;
+    document.querySelectorAll('.stylist-card').forEach(function(c){ c.classList.remove('selected'); });
+    updateSummary();
+  }
+
+  function buildCalendar() {
+    document.getElementById('calMonthYear').textContent = MONTHS[state.month] + ' ' + state.year;
+    var container = document.getElementById('calDays');
+    container.innerHTML = '';
+    var today = new Date();
+    var firstDay = new Date(state.year, state.month, 1).getDay();
+    var daysInMonth = new Date(state.year, state.month + 1, 0).getDate();
+    for (var i = 0; i < firstDay; i++) {
+      var empty = document.createElement('div');
+      empty.className = 'cal-day empty';
+      container.appendChild(empty);
+    }
+    for (var day = 1; day <= daysInMonth; day++) {
+      var dt = new Date(state.year, state.month, day);
+      var el = document.createElement('div');
+      el.className = 'cal-day';
+      el.textContent = day;
+      var todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      if (dt < todayMidnight) {
+        el.classList.add('past');
+      } else {
+        if (dt.toDateString() === today.toDateString()) el.classList.add('today');
+        var dateStr = MONTHS[state.month] + ' ' + day + ', ' + state.year;
+        if (state.date === dateStr) el.classList.add('selected');
+        (function(d, e){ e.onclick = function(){ selectDate(d, e); }; })(dateStr, el);
+      }
+      container.appendChild(el);
+    }
+  }
+
+  function selectDate(dateStr, el) {
+    document.querySelectorAll('.cal-day').forEach(function(d){ d.classList.remove('selected'); });
+    el.classList.add('selected');
+    state.date = dateStr; state.time = '';
+    updateSummary();
+    buildTimeSlots();
+  }
+
+  function buildTimeSlots() {
+    var container = document.getElementById('timeSlots');
+    container.innerHTML = '';
+    TIMES.forEach(function(t) {
+      var el = document.createElement('div');
+      el.className = 'time-slot';
+      el.textContent = t;
+      if (BOOKED.indexOf(t) !== -1) {
+        el.classList.add('booked');
+      } else {
+        if (state.time === t) el.classList.add('selected');
+        (function(time, elem){ elem.onclick = function(){ selectTime(time, elem); }; })(t, el);
+      }
+      container.appendChild(el);
+    });
+  }
+
+  function selectTime(time, el) {
+    document.querySelectorAll('.time-slot').forEach(function(s){ s.classList.remove('selected'); });
+    el.classList.add('selected');
+    state.time = time;
+    updateSummary();
+  }
+
+  function prevMonth() {
+    if (state.month === 0) { state.month = 11; state.year--; } else state.month--;
+    buildCalendar();
+  }
+
+  function nextMonth() {
+    if (state.month === 11) { state.month = 0; state.year++; } else state.month++;
+    buildCalendar();
+  }
+
+  function updateSummary() {
+    var name = document.getElementById('clientName').value;
+    document.getElementById('sum-name').innerHTML = name || '<span class="summary-placeholder">Not entered</span>';
+    document.getElementById('sum-service').innerHTML = state.service || '<span class="summary-placeholder">None selected</span>';
+    document.getElementById('sum-stylist').innerHTML = state.stylist || '<span class="summary-placeholder">Any available</span>';
+    document.getElementById('sum-date').innerHTML = state.date || '<span class="summary-placeholder">Not selected</span>';
+    document.getElementById('sum-time').innerHTML = state.time || '<span class="summary-placeholder">Not selected</span>';
+    document.getElementById('sum-duration').innerHTML = state.duration ? state.duration + ' min' : '<span class="summary-placeholder">--</span>';
+    document.getElementById('sum-price').textContent = state.price ? 'From $' + state.price : '--';
+  }
+
+  function confirmBooking() {
+    var name = document.getElementById('clientName').value.trim();
+    var email = document.getElementById('clientEmail').value.trim();
+    if (!name) { showNotification('Please enter your name.'); return; }
+    if (!email) { showNotification('Please enter your email.'); return; }
+    if (!state.service) { showNotification('Please select a service.'); return; }
+    if (!state.date) { showNotification('Please select a date.'); return; }
+    if (!state.time) { showNotification('Please select a time.'); return; }
+    var ref = 'EST-' + Math.floor(100000 + Math.random() * 900000);
+    document.getElementById('success-ref').textContent = 'REF: ' + ref;
+    document.getElementById('success-desc').textContent = 'A confirmation has been sent to ' + email + '. We look forward to welcoming ' + name + ' at Estifanos\'s Hair Studio on ' + state.date + ' at ' + state.time + '.';
+    document.getElementById('success-screen').classList.add('show');
+  }
+
+  function closeSuccess() {
+    document.getElementById('success-screen').classList.remove('show');
+    document.getElementById('clientName').value = '';
+    document.getElementById('clientEmail').value = '';
+    document.getElementById('clientPhone').value = '';
+    document.getElementById('specialRequests').value = '';
+    state = { service:'', price:0, duration:0, stylist:'', date:'', time:'', month: new Date().getMonth(), year: new Date().getFullYear() };
+    updateSummary(); buildCalendar(); buildTimeSlots();
+    document.querySelectorAll('.service-card, .stylist-card').forEach(function(c){ c.classList.remove('selected'); });
+  }
+
+  function showNotification(msg) {
+    var n = document.getElementById('notification');
+    n.textContent = msg;
+    n.classList.add('show');
+    setTimeout(function(){ n.classList.remove('show'); }, 3000);
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e, i) {
+      if (e.isIntersecting) {
+        setTimeout(function(){ e.target.classList.add('visible'); }, i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(function(el){ observer.observe(el); });
+
+  buildCalendar();
+  buildTimeSlots();
+</script>
+</body>
+</html>
